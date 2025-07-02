@@ -71,20 +71,6 @@ SmartBagRecommender/
 - **1**: Handbag  
 - **2**: Wallet
 
-##  YOLO Training
-
-**Train your own model:**
-```bash
-# Install ultralytics YOLO
-pip install ultralytics
-
-# Train on the dataset
-yolo train model=yolov8n.pt data=dataset/data.yaml epochs=100 imgsz=640
-
-# Use your trained model in the app
-python bag_detector.py
-```
-
 **Training Configuration:**
 - **Base Model**: YOLOv8n (nano) - fast and efficient
 - **Image Size**: 640x640 pixels
@@ -100,32 +86,6 @@ python bag_detector.py
 - **Visual Feedback**: Clear bounding boxes and object labels
 - **Status Indicators**: Real-time system status and detection results
 
-##  Development
-
-**Add New Images:**
-1. Place images in `dataset/images/train/` or `dataset/images/val/`
-2. Create corresponding YOLO format label files in `dataset/labels/`
-3. Update `dataset/data.yaml` if adding new classes
-4. Retrain the model with new data
-
-**Customize Detection:**
-```python
-# Edit bag_detector.py
-# Modify detection thresholds and classes
-# Add custom post-processing logic
-# Integrate your trained YOLO model
-```
-
-##  Requirements
-
-- **OS**: Windows 10/11
-- **Python**: 3.8+
-- **Camera**:  Webcam or any USB Webcam also works
-- **RAM**: 4GB+ (8GB+ for training)
-- **Storage**: 2GB for full dataset
-
-##  Troubleshooting
-
 
 
 ##  Performance
@@ -136,7 +96,7 @@ python bag_detector.py
 - **Supported Objects**: Backpacks, handbags, wallets with bounding boxes
 
 
-## License
+
 
 MIT License - Feel free to use for educational and research purposes.
 
