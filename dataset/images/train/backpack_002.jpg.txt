@@ -1,0 +1,9 @@
+# Placeholder for backpack_002.jpg
+# This would be a 640x640 image of a school backpack
+# Bounding box: center(0.3, 0.35), size(0.25, 0.4)
+# Class: 0 (backpack)
+
+Image dimensions: 640x640
+Object: Blue school backpack
+Position: Left side of image
+Background: Outdoor setting

@@ -1,0 +1,29 @@
+# YOLOv11 Bag Detection Dataset Configuration
+# Dataset structure for training bag detection models
+
+# Dataset paths
+path: ./dataset  # dataset root dir
+train: images/train  # train images (relative to 'path')
+val: images/val  # val images (relative to 'path')
+
+# Classes
+names:
+  0: backpack
+  1: handbag
+  2: wallet
+
+# Number of classes
+nc: 3
+
+# Class descriptions
+class_info:
+  backpack: "Backpacks, school bags, hiking packs"
+  handbag: "Handbags, purses, shoulder bags, totes"
+  wallet: "Wallets, card holders, small pouches"
+  suitcase: "Luggage, travel bags, large cases"
+
+# Training parameters (for reference)
+batch_size: 16
+epochs: 100
+img_size: 640
+workers: 4
