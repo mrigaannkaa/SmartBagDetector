@@ -136,7 +136,7 @@ python bag_detector.py
 - **Supported Objects**: Backpacks, handbags, wallets with bounding boxes
 
 
-## 📄 License
+## License
 
 MIT License - Feel free to use for educational and research purposes.
 
